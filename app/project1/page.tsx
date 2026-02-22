@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="pt-20 max-w-4xl mx-auto space-y-8">
+    <div className="max-w-4xl mx-auto space-y-8">
       <h1 className="text-3xl font-bold">Brand identity NACHTBREKERS</h1>
 
       <img
