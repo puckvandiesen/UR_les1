@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation"
 
 export default function GlobalNavbar() {
   const pathname = usePathname()
-  const isHome = pathname === "/"
+  const isHome = pathname === "/"|| pathname === "/home"
 
   return (
     <header
@@ -23,11 +23,11 @@ export default function GlobalNavbar() {
           <a href="/about" className="hover:text-gray-300">About</a>
 
           {/* Projects dropdown */}
-          <div className="relative group">
-            <span className="cursor-pointer hover:text-gray-300">
-              Projects ▾
-            </span>
-
+            <div className="relative group">
+                <a href="/project" className="hover:text-gray-300">
+                 Projects ▾
+                </a>
+            
             <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
               <div className="w-56 bg-black/80 backdrop-blur rounded shadow-lg text-white">
                 <a href="/project1" className="block px-4 py-2 hover:bg-white/10">
